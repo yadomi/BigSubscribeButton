@@ -1,0 +1,165 @@
+.App-View {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.App-Meta {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    max-width: 800px;
+    min-width: 400px;
+    margin-top: 50px;
+}
+
+.App-Meta h1, .App-Meta h2 {
+    font-weight: normal;
+}
+
+.App-Meta h2 {
+    font-size: 1.2em;
+}
+
+.App-Meta > div:first-child {
+    padding: 0 20px;
+}
+
+.App-Meta img {
+    width: 80px;
+    height: 80px;
+}
+
+.App-Counter {
+    padding: 100px 0;
+}
+
+.App-Counter a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.App-Input {
+    align-items: center;
+    display: flex;
+}
+
+.App-Input input {
+    padding: 10px 0;
+    font-size: 1.5em;
+    color: #ffffff;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+    background: transparent;
+}
+
+.App-Input input:focus {
+    border-color: darkturquoise;
+}
+
+.App-Input input[data-is-error='true'], .App-Input input[data-is-error='true']:focus {
+    color: red;
+    border-color: red;
+}
+
+.Counter-View {
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    height: 200px;
+    padding: 0 30px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #e63027, #c9261e);
+}
+
+.Counter-Icon {
+    padding: 80px;
+    margin-left: 10px;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgOTYuODc1IDk2Ljg3NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgOTYuODc1IDk2Ljg3NTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIGQ9Ik05NS4yMDEsMjUuNTM4Yy0xLjE4Ni01LjE1Mi01LjQtOC45NTMtMTAuNDczLTkuNTJjLTEyLjAxMy0xLjM0MS0yNC4xNzItMS4zNDgtMzYuMjc1LTEuMzQxICAgYy0xMi4xMDUtMC4wMDctMjQuMjY2LDAtMzYuMjc5LDEuMzQxYy01LjA3LDAuNTY3LTkuMjgxLDQuMzY4LTEwLjQ2Nyw5LjUyQzAuMDE5LDMyLjg3NSwwLDQwLjg4NCwwLDQ4LjQzOCAgIEMwLDU1Ljk5MiwwLDY0LDEuNjg4LDcxLjMzNmMxLjE4NCw1LjE1MSw1LjM5Niw4Ljk1MiwxMC40NjksOS41MmMxMi4wMTIsMS4zNDIsMjQuMTcyLDEuMzQ5LDM2LjI3NywxLjM0MiAgIGMxMi4xMDcsMC4wMDcsMjQuMjY0LDAsMzYuMjc1LTEuMzQyYzUuMDctMC41NjcsOS4yODUtNC4zNjgsMTAuNDcxLTkuNTJjMS42ODktNy4zMzcsMS42OTUtMTUuMzQ1LDEuNjk1LTIyLjg5OCAgIEM5Ni44NzUsNDAuODg0LDk2Ljg4OSwzMi44NzUsOTUuMjAxLDI1LjUzOHogTTM1LjkzNiw2My40NzRjMC0xMC43MTYsMC0yMS4zMiwwLTMyLjAzN2MxMC4yNjcsNS4zNTcsMjAuNDY2LDEwLjY3OCwzMC43OTgsMTYuMDY4ICAgQzU2LjQzNCw1Mi44NDcsNDYuMjMsNTguMTM2LDM1LjkzNiw2My40NzR6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Counter-Value {
+    margin: 0 40px;
+    font-size: 6em;
+}
+
+.Counter-Roll {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s cubic-bezier(0.12, 0.78, 0.52, 1.2);
+}
+
+.Counter-Roll[data-value='0'] {
+    transform: translateY(0);
+}
+
+.Counter-Roll[data-value='1'] {
+    transform: translateY(-110px);
+}
+
+.Counter-Roll[data-value='2'] {
+    transform: translateY(-220px);
+}
+
+.Counter-Roll[data-value='3'] {
+    transform: translateY(-330px);
+}
+
+.Counter-Roll[data-value='4'] {
+    transform: translateY(-440px);
+}
+
+.Counter-Roll[data-value='5'] {
+    transform: translateY(-550px);
+}
+
+.Counter-Roll[data-value='6'] {
+    transform: translateY(-660px);
+}
+
+.Counter-Roll[data-value='7'] {
+    transform: translateY(-770px);
+}
+
+.Counter-Roll[data-value='8'] {
+    transform: translateY(-880px);
+}
+
+.Counter-Roll[data-value='9'] {
+    transform: translateY(-990px);
+}
+
+.Counter-Space {
+    width: 0.4em;
+}
+
+.Counter-Display {
+    display: flex;
+    height: 100px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.Spinner {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s infinite linear;
+    border: 0.25rem solid rgba(255, 255, 255, 0.2);
+    border-top-color: #ffffff;
+    border-radius: 50%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
