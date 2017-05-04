@@ -10,5 +10,5 @@ yarn install
 2. Do stuff
 
 ```
-yarn start
+REACT_APP_API_KEY=<your youtube api key here> yarn start
 ```

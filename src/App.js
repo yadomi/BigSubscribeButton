@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { join, head, pick, path, map, range } from 'ramda';
 import './App.css'
 
-const API_KEY = 'AIzaSyD_XbhKSQkw0INZNTvpvyULX_BBicLIbGY';
+const API_KEY = process.env.REACT_APP_API_KEY;
 const API_ROOT = 'https://www.googleapis.com/youtube/v3/channels';
 
 const Counter = props => {
